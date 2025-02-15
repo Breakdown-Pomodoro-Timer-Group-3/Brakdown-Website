@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pomodoro Timer</h1>
+        <p>Stay focused and manage your time effectively with the Pomodoro Technique.</p>
+
+        <div class="row">
+            <div class="metric">
+                <span class="title">Sessions Completed</span>
+                <span class="data">5</span>
+            </div>
+            <div class="metric">
+                <span class="title">Total Focus Time</span>
+                <span class="data">2h 30m</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="{{ url_for('login') }}"><button class="btn">Log In</button></a>
+            <a href="{{ url_for('register') }}"><button class="btn">Register</button></a>
+        </div>
+    </div>
+</body>
+</html>
